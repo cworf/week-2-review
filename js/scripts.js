@@ -4,6 +4,11 @@ $(function(){
     event.preventDefault();
     fName = $('#f-name').val;
     email = $('#email').val;
+    if (fname && email){
+      $('#q1').addClass('slide');
+    } else {
+      alert("Sorry you must enter a name and email to continue")
+    }
   });
 
   $('#main').submit(function(event){
@@ -86,4 +91,9 @@ $(function(){
       alert("Results inconclusive, please select better choices to enrole, you have 3 more chances");
     };
   });
+
+  $('.question input:radio').click(function () {
+        $(this).closest('.question').next().addClass("slide");
+    });
+
 });
