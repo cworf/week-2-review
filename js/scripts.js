@@ -1,5 +1,11 @@
 $(function(){
-  var concat2 = 0;
+
+  $('#lead').submit(function(event){
+    event.preventDefault();
+    fName = $('#f-name').val;
+    email = $('#email').val;
+  });
+
   $('#main').submit(function(event){
     event.preventDefault();
     var question1 = $('input:radio[name=q1]:checked').val();
@@ -39,33 +45,43 @@ $(function(){
     if ( match1() >= 3 ) {
       $('#result-title, #class-name').text("Design/CSS");
       $('#info').attr("href", "https://www.epicodus.com/design");
+      $('.card').addClass('show');
     } else if ( match2() >= 3 ){
       $('#result-title, #class-name').text("Ruby");
       $('#info').attr("href", "https://www.epicodus.com/ruby");
+      $('.card').addClass('show');
     } else if ( match3() >= 3 ){
       $('#result-title, #class-name').text("PHP");
       $('#info').attr("href", "https://www.epicodus.com/php");
+      $('.card').addClass('show');
     } else if ( match4() >= 3 ){
       $('#result-title, #class-name').text("Java");
       $('#info').attr("href", "https://www.epicodus.com/java");
+      $('.card').addClass('show');
     } else if ( match5() >= 3 ){
       $('#result-title, #class-name').text("C#");
       $('#info').attr("href", "https://www.epicodus.com/c-sharp");
+      $('.card').addClass('show');
     } else if ( match1() === 2 ){
       $('#result-title, #class-name').text("Design/CSS");
       $('#info').attr("href", "https://www.epicodus.com/design");
+      $('.card').addClass('show');
     } else if ( match2() === 2 ){
       $('#result-title, #class-name').text("Ruby");
       $('#info').attr("href", "https://www.epicodus.com/ruby");
+      $('.card').addClass('show');
     } else if ( match3() === 2 ){
       $('#result-title, #class-name').text("PHP");
       $('#info').attr("href", "https://www.epicodus.com/php");
+      $('.card').addClass('show');
     } else if ( match4() === 2 ){
       $('#result-title, #class-name').text("Java");
       $('#info').attr("href", "https://www.epicodus.com/java");
+      $('.card').addClass('show');
     } else if ( match5() === 2 ){
       $('#result-title, #class-name').text("C#");
       $('#info').attr("href", "https://www.epicodus.com/c-sharp");
+      $('.card').addClass('show');
     } else {
       alert("Results inconclusive, please select better choices to enrole, you have 3 more chances");
     };
