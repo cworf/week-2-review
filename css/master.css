@@ -1,0 +1,33 @@
+.question, .result {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.slide, .show {
+    max-height: 300px;
+}
+
+.container.result {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#main .btn {
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    width: 0px;
+    padding: 0;
+    border: 0;
+    border-radius: 100%;
+    transition: all .2s ease;
+}
+
+#main .btn.slide-right {
+    width: 320px;
+    padding: 20px;
+    z-index: 2;
+}
