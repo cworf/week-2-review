@@ -109,4 +109,8 @@ $(function(){
     $(this).siblings().removeClass('checked');
   });
 
+  $('.close').click(function() {
+    $('.result').removeClass('show');
+  })
+
 });
