@@ -1,10 +1,11 @@
 $(function(){
-
   $('#lead').submit(function(event){
     event.preventDefault();
-    fName = $('#f-name').val;
-    email = $('#email').val;
+    var firstName = $('#f-name').val();
+    var email = $('#email').val();
     $('#q1').addClass('slide');
+    $('.form-box').addClass('clicked');
+    $('#student').text(firstName);
   });
 
   $('#main').submit(function(event){
@@ -43,6 +44,8 @@ $(function(){
         return concat.match(/1/g).length;
       };
     };
+
+
     if ( match1() >= 3 ) {
       $('#result-title, #class-name').text("Design/CSS");
       $('#info').attr("href", "https://www.epicodus.com/design");
@@ -89,14 +92,21 @@ $(function(){
   });
 
   $('.question input:radio').click(function () {
-      $(this).closest('.question').next().addClass("slide");
-    });
+    $(this).closest('.question').next().addClass("slide");
+    $('html,body').animate({ scrollTop: 9999 }, 'slow');
+  });
 
   $('#q5 input:radio').click(function () {
-      $("#main button").addClass("slide-right");
-    });
-  $('.slide-right').click(function () {
-      $(this).removeClass("slide-right");
-    });
+    $("#main button").addClass("slide-right");
+  });
+
+  $('button').click(function () {
+    $(this).removeClass("slide-right");
+  });
+
+  $('#main label').click(function(){
+    $(this).addClass('checked');
+    $(this).siblings().removeClass('checked');
+  });
 
 });

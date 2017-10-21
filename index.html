@@ -10,7 +10,8 @@
     <title>Which class should I take?</title>
   </head>
   <body>
-    <div class="container-fluid header">
+    <div class="container-fluid header p-0">
+      <img src="img\banner.jpg" alt="">
       <div class="form-box">
         <h2>First, Tell us a bit about yourself</h2>
         <form id="lead">
@@ -115,26 +116,26 @@
             <label>
               <input type="radio" name="q2" value="3">
               <div class="answer">
-                <span>B</span>
+                <span>C</span>
               </div>
             </label>
             <label>
               <input type="radio" name="q2" value="4">
               <div class="answer">
-                <span>B</span>
+                <span>D</span>
               </div>
             </label>
             <label>
               <input type="radio" name="q2" value="5">
               <div class="answer">
-                <span>B</span>
+                <span>E</span>
               </div>
             </label>
           </div>
         </div>
         <div id="q3" class="question row">
           <div class="col-md-9">
-            <h2>Size of preferred employer (1 = Ma & Pa, 5 = Enterprise)</h2>
+            <h2>Size of preferred employer</h2>
             <ol type="A">
               <li>1 (Ma & Pa)</li>
               <li>2</li>
@@ -274,7 +275,7 @@
         </div>
         <div class="card-body">
           <h3 id="result-title"></h3>
-          <p><span id="student"></span>!</p>
+          <p id="student"></p>
           <p>based on your survey, we have decided you would fit best in the <span id="class-name"></span> class!</p>
           <p>click <a id="info" href="">Here</a> for more information about the class</p>
         </div>

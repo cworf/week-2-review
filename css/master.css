@@ -11,8 +11,8 @@
 .container.result {
     position: fixed;
     left: 0;
-    right: 0;
     bottom: 0;
+    width: 50%;
 }
 
 #main .btn {
@@ -29,5 +29,141 @@
 #main .btn.slide-right {
     width: 320px;
     padding: 20px;
-    z-index: 2;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.header {
+    position: relative;
+    box-shadow: 0 0 50px;
+}
+
+.form-box {
+    position: absolute;
+    z-index: 99;
+    left: 20%;
+    top: 72%;
+    width: 60%;
+    background: rgb(0, 179, 180);
+    padding: 30px;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 8px 7px 16px 3px rgba(0, 0, 0, 0.56);
+    transition: all .5s ease-in-out;
+}
+
+.form-box h2 {
+    text-align: center;
+}
+
+.form-box.clicked {
+    top: 50px;
+    right: 50px;
+    background: rgba(0, 179, 180, 0.93);
+}
+
+.question {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04f4e8+0,0fc1b5+40,03918a+100 */
+    background: #04f4e8; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #04f4e8 0%, #0fc1b5 40%, #03918a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #04f4e8 0%,#0fc1b5 40%,#03918a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #04f4e8 0%,#0fc1b5 40%,#03918a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04f4e8', endColorstr='#03918a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #000;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.col-md-9, col-md-3 {
+    padding: 55px 45px 55px 60px;
+}
+
+.col-md-3 {
+    display: flex;
+    padding: 0;
+}
+
+#lead button {
+    display: block;
+    width: 100%;
+}
+
+.form-box .row {
+    margin: 35px 0;
+}
+
+.row:last-of-type .col-md-6:last-of-type {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.col-md-3 label {
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    transition: all .5s ease;
+    font-size: 174px;
+    overflow: hidden;
+    min-width: 20%;
+}
+
+.col-md-3 label input {
+    display: none;
+}
+
+.col-md-3 label:hover {
+    box-shadow: inset 0 0 45px;
+    font-size: 50px;
+}
+
+.checked {
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 50px!important;
+}
+
+.col-md-3:before {
+    content: "";
+    right: 100%;
+    position: absolute;
+    border: 50px solid transparent;
+    border-left-color: black;
+    top: 34%;
+}
+
+label:focus {
+    background: #fff!important;
+}
+
+.card-header {
+    background: #056f9d;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card {
+    background: #637589;
+    color: #fff;
+}
+
+.btn-primary {
+    background: #056f9d;
+    cursor: pointer;
+}
+
+h3#result-title {
+    text-align: center;
+}
+
+.card a {
+    color: #04efe3;
 }
