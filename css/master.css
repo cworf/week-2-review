@@ -15,6 +15,25 @@
     width: 50%;
 }
 
+.opt-in {
+    position: absolute;
+    top: 100%;
+    background: rgba(255, 255, 255, 0.61);
+    left: 25%;
+    right: 25%;
+    transition: all 1s ease;
+    max-height: 0px;
+    overflow: hidden;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 5px;
+}
+
+.opt-in.true {
+    max-height: 40px;
+}
+
 #main .btn {
     position: fixed;
     right: 0;
@@ -68,6 +87,15 @@ img {
     background: rgba(0, 179, 180, 0.93);
 }
 
+.header input:{
+    margin-bottom: 15px
+}
+
+.col-md-6:first-of-type input:not(#email) {
+    margin-bottom: 27px;
+    margin-right: 27px;
+}
+
 .question {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04f4e8+0,0fc1b5+40,03918a+100 */
     background: #04f4e8; /* Old browsers */
     background: -moz-linear-gradient(-45deg, #04f4e8 0%, #0fc1b5 40%, #03918a 100%); /* FF3.6-15 */
@@ -80,6 +108,7 @@ img {
 
 .col-md-9, col-md-3 {
     padding: 55px 45px 55px 60px;
+    text-align: center;
 }
 
 .col-md-3 {
@@ -148,6 +177,7 @@ label:focus {
     color: #fff;
     font-size: 20px;
     text-align: center;
+    border-radius: 0;
 }
 
 .card {

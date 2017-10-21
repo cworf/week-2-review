@@ -3,9 +3,19 @@ $(function(){
     event.preventDefault();
     var firstName = $('#f-name').val();
     var email = $('#email').val();
+    var optIn = $('input:radio[name=opt-in]:checked').val();
     $('#q1').addClass('slide');
     $('.form-box').addClass('clicked');
-    $('#student').text(firstName);
+    $('#student,.student').text(firstName);
+    $('#email-confirm').text(email);
+
+    if (optIn === "yes") {
+      if (email && firstName) {
+        $('.opt-in').addClass('true');
+      } else {
+        alert("You must input all of your information if you want to receive email.. lol.");
+      };
+    };
   });
 
   $('#main').submit(function(event){
@@ -17,7 +27,6 @@ $(function(){
     var question5 = $('input:radio[name=q5]:checked').val();
 
     var concat = question1 + question2 + question3 + question4 + question5;
-    var sorted = concat.split('').sort().join('');
 
     var match5 = function(){
       if (concat.match(/5/g)) {
