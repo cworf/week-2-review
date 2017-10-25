@@ -1,16 +1,16 @@
-# Week 1 Code Review
+# Week 2 Code Review
 
-# All About Mr. Worf
+# Path Picker
 
 ### Author: Colin Worf
 
 ## Description
 
-This is a single page website chronicling some details about Myself. It was a code review project for the first week of Epicodus (CSS/HTML intro).
+This is a single page website which utilizes branching to create a form which outputs a specific code path depending on the users answers, the code determines which letter was answered the most by converting the values into a string and checking them using regular expressions. It was a code review project for the second week of Epicodus (CSS/HTML intro).
 
 ## Instructions
 
-1. Clone project ```$ git clone https://github.com/cworf/Week-1-review ```
+1. Clone project ```$ git clone https://github.com/cworf/week-2-review ```
 2. enter project by opening the repository and selecting index.html
 3. view final project online by visiting https://cworf.github.io/week-2-review/
 
