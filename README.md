@@ -16,10 +16,10 @@ This is a single page website which utilizes branching to create a form which ou
 
 ## Technologies used
 
-###HTML
-###CSS
-###bootstrap
-###JavaScript/jQuery
+### HTML
+### CSS
+### bootstrap
+### JavaScript/jQuery
 
 ## Copyright
 
